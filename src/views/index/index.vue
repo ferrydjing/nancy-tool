@@ -1,5 +1,5 @@
 <template>
-  <el-form ref="form" label-position="top" :model="formData" :rules="cRules" @submit.native.prevent>
+  <el-form ref="form" label-width="200px" :model="formData" :rules="cRules" @submit.native.prevent>
     <el-form-item label="Age" prop="age">
       <el-input class="w360" v-model="formData.age" placeholder="input age"></el-input>
     </el-form-item>
@@ -14,13 +14,13 @@
         <el-select class="w360" v-model="formData.tra">
           <el-option v-for="(item, index) in cTra" :key="index" :label="item" :value="item"></el-option>
         </el-select>
-        <div class="after">TRA可选: {{ cTra }}</div>
+        <span class="after">TRA可选: {{ cTra }}</span>
       </el-form-item>
       <el-form-item label="TRP" prop="trp">
         <el-select class="w360" v-model="formData.trp">
           <el-option v-for="(item, index) in cTrp" :key="index" :label="item" :value="item"></el-option>
         </el-select>
-        <div class="after">TRP可选: {{ cTrp }}</div>
+        <span class="after">TRP可选: {{ cTrp }}</span>
       </el-form-item>
     </template>
     <template v-else>
@@ -28,13 +28,13 @@
         <el-select class="w360" v-model="formData.tra">
           <el-option v-for="(item, index) in cTra1" :key="index" :label="item" :value="item"></el-option>
         </el-select>
-        <div class="after">TRA可选: {{ cTra1 }}</div>
+        <span class="after">TRA可选: {{ cTra1 }}</span>
       </el-form-item>
       <el-form-item label="TRP" prop="trp">
         <el-select class="w360" v-model="formData.trp">
           <el-option v-for="(item, index) in cTrp1" :key="index" :label="item" :value="item"></el-option>
         </el-select>
-        <div class="after">TRP可选: {{ cTrp1 }}</div>
+        <span class="after">TRP可选: {{ cTrp1 }}</span>
       </el-form-item>
     </template>
 
@@ -46,7 +46,7 @@
       <el-select class="w360" v-model="formData.mip">
         <el-option v-for="(item, index) in cMip" :key="index" :label="item" :value="item"></el-option>
       </el-select>
-      <div class="after">Mip可选: {{ cMip }}</div>
+      <span class="after">Mip可选: {{ cMip }}</span>
     </el-form-item>
   </el-form>
 </template>
@@ -198,7 +198,7 @@ export default {
       const arr = [5, 8, 12, 16]
       const val = this.formData.tra - this.formData.age - this.formData.accum
       console.log(val, arr)
-      return arr.filter(item => item < val)
+      return arr.filter(item => item <= val)
     }
   },
   watch: {
@@ -221,12 +221,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .el-form {
+  margin-top: 60px;
   padding: 0 20px;
   .after {
-    /* margin-left: 20px; */
+    margin-left: 20px;
   }
 }
 .w360 {
-  /* width: 360px; */
+  width: 360px;
 }
 </style>
