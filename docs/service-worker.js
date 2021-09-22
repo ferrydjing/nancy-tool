@@ -37,8 +37,8 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["favicon.ico","1ba2ae710d927f13d483fd5d1e548c9b"],["static/css/app.932fc622.css","9849f9aae0db8282be2ac71ca69c4732"],["static/css/chunk-vendors.5a799807.css","1162e88ac782ac67341870933ad687cd"],["static/fonts/element-icons.535877f5.woff","535877f50039c0cb49a6196a5b7517cd"],["static/fonts/element-icons.732389de.ttf","732389ded34cb9c52dd88271f1345af9"],["static/js/app.3cbf4fcf.js","b9f3b14cad9bf078e09cb5374c4bca55"],["static/js/chunk-vendors.4ec2767c.js","45b1af3040184c72aad8afb02a3cacba"],["static/js/chunk-vendors.4ec2767c.js.LICENSE.txt","28b675f456a0d310c8fd5ad2254fa0ef"]];
-var cacheName = 'sw-precache-v3-sw-cache-nancy-tool-1632274651656-' + (self.registration ? self.registration.scope : '');
+var precacheConfig = [["favicon.ico","1ba2ae710d927f13d483fd5d1e548c9b"],["static/css/app.6ba6777a.css","abc6cbe55503bbf1b6130144318a8284"],["static/css/chunk-vendors.5a799807.css","1162e88ac782ac67341870933ad687cd"],["static/fonts/element-icons.535877f5.woff","535877f50039c0cb49a6196a5b7517cd"],["static/fonts/element-icons.732389de.ttf","732389ded34cb9c52dd88271f1345af9"],["static/js/app.c952030e.js","8c380191056cabcd93e9f793b0b141f5"],["static/js/chunk-vendors.4ec2767c.js","45b1af3040184c72aad8afb02a3cacba"],["static/js/chunk-vendors.4ec2767c.js.LICENSE.txt","28b675f456a0d310c8fd5ad2254fa0ef"]];
+var cacheName = 'sw-precache-v3-sw-cache-nancy-tool-1632275095735-' + (self.registration ? self.registration.scope : '');
 
 
 var ignoreUrlParametersMatching = [/^utm_/];
