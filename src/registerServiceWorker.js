@@ -23,7 +23,8 @@ register(`/nancy-tool/service-worker.js`, {
       type: 'warning',
       closeOnClickModal: false,
       showCancelButton: false,
-      showClose: false
+      showClose: false,
+      closeOnPressEscape: false
     }).then(() => {
       window.location.reload()
     })
