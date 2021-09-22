@@ -1,7 +1,6 @@
 module.exports = {
-  cacheId: `sw-cache-nancy-tool-${new Date().getTime()}`,
+  cacheId: `sw-cache-nancy-tool`,
   skipWaiting: true,
   navigateFallback: '/index.html',
-  exclude: [/\.html$/],
   navigateFallbackAllowlist: [/^(?!.*\.html$|\/data\/).*/]
 }
