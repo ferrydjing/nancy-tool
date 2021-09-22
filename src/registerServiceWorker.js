@@ -1,7 +1,7 @@
 import { register } from 'register-service-worker'
 import { MessageBox } from 'element-ui'
 
-register('/nancy-tool/service-worker.js', {
+register(`/nancy-tool/service-worker.js?d=${new Date().getTime()}`, {
   ready(/* registration */) {
     console.log('Service worker is active.')
   },

@@ -1,6 +1,6 @@
 <template>
   <el-form ref="form" label-width="200px" :model="formData" :rules="cRules" @submit.native.prevent>
-    <h2>Nancy Tools</h2>
+    <h2>Nancy Tools modified</h2>
     <el-form-item label="Age" prop="age">
       <el-input class="w360" v-model="formData.age" placeholder="input age"></el-input>
     </el-form-item>
