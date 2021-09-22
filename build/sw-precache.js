@@ -1,9 +1,7 @@
 module.exports = {
-    cacheId: `sw-cache-nancy-tool-${new Date().getTime()}`,
-    filename: 'service-worker.js',
-    stripPrefix: 'dist/',
-    navigateFallback: '/index.html',
-    staticFileGlobsIgnorePatterns: [/\.html$/],
-    navigateFallbackWhitelist: [/^(?!.*\.html$|\/data\/).*/],
-    verbose: true
-};
+  cacheId: `sw-cache-nancy-tool-${new Date().getTime()}`,
+  skipWaiting: true,
+  navigateFallback: '/index.html',
+  exclude: [/\.html$/],
+  navigateFallbackAllowlist: [/^(?!.*\.html$|\/data\/).*/]
+}
