@@ -1,5 +1,7 @@
 const path = require('path')
 const TerserPlugin = require('terser-webpack-plugin')
+const swConfig = require('./build/sw-precache')
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 const resolve = dir => {
   return path.join(__dirname, dir)
@@ -38,7 +40,8 @@ module.exports = {
                 }
               })
             ]
-          }
+          },
+          plugins: [new SWPrecacheWebpackPlugin(swConfig)]
         }
       : {},
   devServer: {
