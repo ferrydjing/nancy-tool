@@ -44,8 +44,11 @@ module.exports = {
           },
           plugins: [new GenerateSW(swConfig)]
         }
-      : {},
+      : {
+          plugins: [new GenerateSW(swConfig)]
+        },
   devServer: {
+    host: 'test.dan.xgimi.com',
     proxy: {
       '/server': {
         // target: 'http://admin.okpay.com',

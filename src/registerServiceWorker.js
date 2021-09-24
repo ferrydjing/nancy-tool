@@ -1,7 +1,7 @@
 import { register } from 'register-service-worker'
 import { MessageBox } from 'element-ui'
 
-register(`/nancy-tool/service-worker.js`, {
+register(`${process.env.NODE_ENV === 'production' ? '/nancy-tool' : ''}/service-worker.js`, {
   ready(/* registration */) {
     console.log('Service worker is active.')
   },
